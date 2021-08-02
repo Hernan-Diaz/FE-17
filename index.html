@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles_agregar_super.css" rel="stylesheet">
+    <title>Formulario</title>
+    
+</head>
+<body>
+    <header>
+        <p>20% de descuento en todos los productos!</p>
+        <section>
+            <img src="img/OBJECTS.png">
+            <span>Nombre Tienda</span>
+        </section>
+        
+            <ul id="lista_header">
+                <il>Contacto</il>
+                <il>Registrarme</il>
+                <il>Ingresar</il>
+            </ul>
+        
+    </header>
+    <main style="display:flex; justify-content: center; margin: 0px; padding-top: 2.5rem; padding-bottom: 2.5rem;">
+        <section  style="background-color: #00669F; width: 66.25vw; ; border-radius: 3rem; padding: 0px;">
+            <h1 style="text-align: center; color: #FBFFFD; font-size: 2.5rem; margin-top: 1rem; margin-bottom: 0.5rem;">Añadí tu super!</h1>
+            <p style="font-size: 1.25rem; color: #fff; font-weight: 300; margin: 0px;">Agregá tu personaje favorito completando las opciones.</p>
+            <br>
+            <form action="" method="POST">
+                <section class="form_item">
+                <label for="nombre">*Nombre</label><br>
+                <br>
+                
+
+                <input type="text" name="nombre" id="nombre">
+            </section>
+            
+            <section class="form_item">
+                <label for="especie">*Especie</label><br>
+                <br>
+                <select name="especie" id="especie">
+                    <option value="none">Especie</option>
+                    <option value="unk">Unknown</option>
+                </select>
+            </section>
+
+            <section class="form_item">
+                <label for="fecha">Fecha</label> <br>
+                <br>
+
+                
+
+                <input type="date" name="fecha" id="fecha" style="border: rgba(0, 0, 0, 0.1);">
+            </section>
+                <section class="form_item">
+                <label for="foto">Agregar Foto</label><br>
+                <br>
+                <section id="foto_container">
+                <input type="file" accept="image/*" name="foto" id="foto">
+            </section>
+            </section>
+                <textarea name="descripción" rows="18" placeholder="Descripción"></textarea>
+
+            <section id="check_radio">
+                <fieldset style="border: none; border-bottom: #CCCCCC solid 1px; text-align: left;">
+                    <legend>Poderes</legend> <br />
+                    <input id="volar" type="checkbox" name="poderes" value="volar">
+                    <label for="volar" class="field_opt">Volar</label> <br />
+                    <input id="super_inteligencia" type="checkbox" name="poderes" value="super_inteligencia">
+                    <label for="super_inteligencia" class="field_opt">SuperInteligencia</label> <br />
+                    <input id="vista_laser" type="checkbox" name="poderes" value="vista_laser">
+                    <label for="vista_laser" class="field_opt">Vista de rayo láser</label> <br />
+                    <input id="billetera_gorda" type="checkbox" name="poderes" value="billetera_gorda">
+                    <label for="billetera_gorda" class="field_opt">Billetera gorda</label>
+                    
+                </fieldset>
+                <br>
+               
+                <fieldset style="border: none; text-align: left;">
+                    <legend>Tipo de personaje</legend> <br />
+                    <input id="hero" type="radio" name="tipo_personaje" value="hero">
+                    <label for="hero" class="field_opt2">Héroe / Heroina</label><br />
+
+                    
+
+                    <input id="villain" type="radio" name="tipo_personaje" value="villain">
+                    <label for="villain" class="field_opt2">Villano / Villana</label>
+                    
+                    
+                </fieldset>
+            </section>
+            
+            <input type="submit" style="width: 32.36vw;" value="Añadir">
+                <!--
+                <label for="nombre">*Nombre</label>
+                <input type="text" name="nombre" id="nombre" style="width: 21.375rem;">
+
+                <label>*Especie</label>
+
+
+                <select name="especie">
+                    <option value="none">Especie</option>
+                    <option value="unk">Unknown</option>
+                </select>
+                
+
+                <label for="fecha">Fecha</label>
+                <input type="date" name="fecha" id="fecha">
+
+                <label for="foto">Agregar Foto</label>
+                <input type="file" accept="image/*" name="foto" id="foto">
+
+                <textarea name="descripción">Descripción</textarea>
+
+                <fieldset style="border: none; border-bottom: #CCCCCC solid 1px;">
+                    <legend>Poderes</legend> <br />
+                    <input id="volar" type="checkbox" name="poderes" value="volar">
+                    <label for="volar">Volar</label>
+                    <input id="super_inteligencia" type="checkbox" name="poderes" value="super_inteligencia">
+                    <label for="super_inteligencia">SuperInteligencia</label>
+                    <input id="vista_laser" type="checkbox" name="poderes" value="vista_laser">
+                    <label for="vista_laser">Vista de rayo láser</label>
+                    <input id="billetera_gorda" type="checkbox" name="poderes" value="billetera_gorda">
+                    <label for="billetera_gorda">Billetera gorda</label>
+                    
+                </fieldset>
+                
+               
+                <fieldset style="border: none;">
+                    <legend>Tipo de personaje</legend> <br />
+                    <input id="hero" type="radio" name="tipo_personaje" value="hero">
+                    <label for="hero">Héroe / Heroina</label>
+
+                    
+
+                    <input id="villain" type="radio" name="tipo_personaje" value="villain">
+                    <label for="villain">Villano / Villana</label>
+                    
+                    
+                </fieldset>
+                -->
+            </form>
+            
+        </section>
+        <!--<br>
+        <h1 style="text-align: start; padding: 0px; margin: 0px; color:blueviolet;">Añadí tu super!</h1>
+
+        
+        <h1>Registro</h1>
+        <form method="POST" action="">
+            
+        
+            <input id="nombrecompleto" placeholder="Nombre y Apellido" type="text">
+
+            <input id="email" placeholder="Correo Electrónico" type="email">
+            
+        
+            <input id="contraseña" type="password" placeholder="Contraseña">
+
+            <select id="pais" name="país">
+
+                <option value="arg">País:</option>
+
+                <option value="arg">Argentina</option>
+                
+                <option value="col">Colombia</option>
+                
+                <option value="bra">Brasil</option>
+                
+            </select>
+            
+            <input type="reset" value="Resetear" id="reset">
+            
+            <input type="submit" value="Registrar" id="registrar">
+            
+        </form>
+        <br>
+    
+        <p id="ingresa">¿Ya tenés una cuenta? <a href="index.html">Ingresá</a></p>
+    -->
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+</body>
+</html>
